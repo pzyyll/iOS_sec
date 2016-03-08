@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ZsW-wa-oQ9">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Root View Controller-->
+        <scene sceneID="BJx-nN-JiS">
+            <objects>
+                <tableViewController id="ibE-qv-6u8" customClass="ViewController" customModule="TreeNavigation" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="dqi-LE-Wdl">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="CellIdentifier" id="UEu-6K-UQQ" userLabel="CellIdentifier">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UEu-6K-UQQ" id="4m7-xm-P1M">
+                                    <rect key="frame" x="0.0" y="0.0" width="567" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="0x6-oh-MUp" kind="show" identifier="ShowSelectedProvince" id="vQj-iZ-gW0"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ibE-qv-6u8" id="Z2D-fY-Ziu"/>
+                            <outlet property="delegate" destination="ibE-qv-6u8" id="f2K-hO-PAA"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="IWC-5V-jKz"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FPq-kY-09q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="575" y="-227"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="85j-Lp-oy6">
+            <objects>
+                <viewController id="J53-i5-V3p" customClass="DetailViewController" customModule="TreeNavigation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Rx3-mh-1VY"/>
+                        <viewControllerLayoutGuide type="bottom" id="SvU-Rg-9gN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="REc-9l-aWA">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ymw-LA-Y77">
+                                <rect key="frame" x="0.0" y="84" width="600" height="600"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ymw-LA-Y77" firstAttribute="height" secondItem="REc-9l-aWA" secondAttribute="height" id="9QW-Hn-ta2"/>
+                            <constraint firstItem="Ymw-LA-Y77" firstAttribute="leading" secondItem="REc-9l-aWA" secondAttribute="leadingMargin" constant="-20" id="Qb7-ST-j2Y"/>
+                            <constraint firstItem="Ymw-LA-Y77" firstAttribute="top" secondItem="Rx3-mh-1VY" secondAttribute="bottom" constant="20" id="mTD-aC-9A8"/>
+                            <constraint firstItem="Ymw-LA-Y77" firstAttribute="width" secondItem="REc-9l-aWA" secondAttribute="width" id="qI1-wE-hEC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="Ymw-LA-Y77" id="W1g-fx-gHc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bts-dC-SNF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1251" y="510"/>
+        </scene>
+        <!--Cities Table View Controller-->
+        <scene sceneID="k3s-Nw-Se6">
+            <objects>
+                <tableViewController id="0x6-oh-MUp" customClass="CitiesTableViewController" customModule="TreeNavigation" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="8Rf-VB-uI0">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="detailDisclosureButton" indentationWidth="10" reuseIdentifier="CellIdentifier" id="23T-oV-p0d">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="23T-oV-p0d" id="ab5-A1-mSt">
+                                    <rect key="frame" x="0.0" y="0.0" width="533" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="J53-i5-V3p" kind="show" identifier="ShowSelectedCity" id="R4N-9A-4m4"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="0x6-oh-MUp" id="ycO-R4-19G"/>
+                            <outlet property="delegate" destination="0x6-oh-MUp" id="oGU-BE-ldu"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nUz-Ze-TAC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1251" y="-233"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Uhd-XZ-rU5">
+            <objects>
+                <navigationController id="ZsW-wa-oQ9" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="DH5-X4-KAN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ibE-qv-6u8" kind="relationship" relationship="rootViewController" id="qGd-pO-Ilv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Iml-M9-oYY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-131" y="-221"/>
+        </scene>
+    </scenes>
+</document>
