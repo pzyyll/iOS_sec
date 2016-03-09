@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyPickerViewController" customModule="my_fram_2" customModuleProvider="target">
+            <connections>
+                <outlet property="pickerView" destination="VPk-8h-HyU" id="AI4-7g-nZA"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="587" height="260"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VPk-8h-HyU">
+                    <rect key="frame" x="0.0" y="44" width="587" height="216"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Kpz-Dj-b1D"/>
+                        <outlet property="delegate" destination="-1" id="x9q-2R-Qmf"/>
+                    </connections>
+                </pickerView>
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YHy-hL-agl">
+                    <rect key="frame" x="0.0" y="0.0" width="587" height="44"/>
+                    <items>
+                        <navigationItem id="JNb-Ej-9Aa">
+                            <barButtonItem key="leftBarButtonItem" title="Cancle" id="flV-wK-Ia4">
+                                <connections>
+                                    <action selector="cancle:" destination="-1" id="YiP-vV-ngI"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem key="rightBarButtonItem" title="Done" id="kdC-0c-CZG">
+                                <connections>
+                                    <action selector="done:" destination="-1" id="mNA-yh-bSM"/>
+                                </connections>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="YHy-hL-agl" firstAttribute="bottom" secondItem="VPk-8h-HyU" secondAttribute="top" id="JOH-Zk-ind"/>
+                <constraint firstItem="YHy-hL-agl" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="eLc-br-XQw"/>
+                <constraint firstAttribute="bottom" secondItem="VPk-8h-HyU" secondAttribute="bottom" id="f5c-D0-Uxs"/>
+                <constraint firstItem="YHy-hL-agl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="gNh-te-4kd"/>
+                <constraint firstItem="YHy-hL-agl" firstAttribute="leading" secondItem="VPk-8h-HyU" secondAttribute="leading" id="uTC-H1-ajC"/>
+                <constraint firstItem="VPk-8h-HyU" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="wvT-Kt-7CL"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="356.5" y="633"/>
+        </view>
+    </objects>
+</document>
