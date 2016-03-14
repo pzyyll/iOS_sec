@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>MediaPlay.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>4CB3FC9A1C963C840087C78E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4CB3FCAE1C963C840087C78E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4CB3FCB91C963C840087C78E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

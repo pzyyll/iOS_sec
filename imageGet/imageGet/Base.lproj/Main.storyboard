@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="imageGet" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Zal-N1-TwR">
+                                <rect key="frame" x="0.0" y="20" width="600" height="251"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="251" id="JSp-FM-qxB"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6B0-wC-eUt">
+                                <rect key="frame" x="254" y="285" width="93" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="BV3-rw-7WY"/>
+                                    <constraint firstAttribute="width" constant="93" id="YUv-Bw-DN7"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="qG3-0o-Is8"/>
+                                </constraints>
+                                <state key="normal" title="LIB DIR LOAD"/>
+                                <connections>
+                                    <action selector="localLib:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jy7-nu-58L"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZB5-BW-Hhl">
+                                <rect key="frame" x="235" y="333" width="131" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="wdc-aq-5Yd"/>
+                                </constraints>
+                                <state key="normal" title="BUNDLE DIR LOAD"/>
+                                <connections>
+                                    <action selector="bundleLoad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y5n-0R-oO3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vVJ-9v-ask">
+                                <rect key="frame" x="247" y="371" width="106" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="tIf-iw-oPN"/>
+                                </constraints>
+                                <state key="normal" title="CLOUND LOAD"/>
+                                <connections>
+                                    <action selector="webLoad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AMk-28-l7t"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tp8-IZ-2dH">
+                                <rect key="frame" x="284" y="454" width="33" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="3a8-KW-W2b"/>
+                                </constraints>
+                                <state key="normal" title="CAM">
+                                    <color key="titleColor" red="0.17722250789999999" green="1" blue="0.99342194669999995" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fof-rF-HeL">
+                                <rect key="frame" x="259" y="409" width="83" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ZQJ-DD-HuW"/>
+                                </constraints>
+                                <state key="normal" title="IMGLIB GET">
+                                    <color key="titleColor" red="0.1772225079489943" green="1" blue="0.99342194667353467" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="pickPhotoLib:" destination="BYZ-38-t0r" eventType="touchUpInside" id="99g-3o-Lf3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vVJ-9v-ask" firstAttribute="top" secondItem="ZB5-BW-Hhl" secondAttribute="bottom" constant="8" symbolic="YES" id="5y7-GW-GCB"/>
+                            <constraint firstItem="ZB5-BW-Hhl" firstAttribute="top" secondItem="6B0-wC-eUt" secondAttribute="bottom" constant="18" id="6nV-Ok-oH2"/>
+                            <constraint firstItem="6B0-wC-eUt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HZ6-DL-IoM"/>
+                            <constraint firstItem="vVJ-9v-ask" firstAttribute="centerX" secondItem="6B0-wC-eUt" secondAttribute="centerX" id="RAx-PA-TG6"/>
+                            <constraint firstItem="Zal-N1-TwR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="UT8-kq-Iq3"/>
+                            <constraint firstItem="Fof-rF-HeL" firstAttribute="top" secondItem="vVJ-9v-ask" secondAttribute="bottom" constant="8" symbolic="YES" id="bDY-a2-Qlk"/>
+                            <constraint firstItem="Zal-N1-TwR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="beE-VB-zVF"/>
+                            <constraint firstItem="Zal-N1-TwR" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="chv-vr-eu7"/>
+                            <constraint firstItem="6B0-wC-eUt" firstAttribute="top" secondItem="Zal-N1-TwR" secondAttribute="bottom" constant="14" id="eax-35-xPn"/>
+                            <constraint firstItem="tp8-IZ-2dH" firstAttribute="top" secondItem="Fof-rF-HeL" secondAttribute="bottom" constant="15" id="gmq-KV-PUU"/>
+                            <constraint firstAttribute="bottom" secondItem="Fof-rF-HeL" secondAttribute="bottom" constant="161" id="i66-Um-GZ3"/>
+                            <constraint firstItem="ZB5-BW-Hhl" firstAttribute="centerX" secondItem="6B0-wC-eUt" secondAttribute="centerX" id="r26-GM-xXe"/>
+                            <constraint firstItem="Fof-rF-HeL" firstAttribute="centerX" secondItem="6B0-wC-eUt" secondAttribute="centerX" id="s5b-8z-312"/>
+                            <constraint firstItem="tp8-IZ-2dH" firstAttribute="centerX" secondItem="6B0-wC-eUt" secondAttribute="centerX" id="w6D-US-Wza"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="showImg" destination="Zal-N1-TwR" id="vLl-co-EbO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="429"/>
+        </scene>
+    </scenes>
+</document>
