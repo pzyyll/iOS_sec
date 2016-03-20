@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyDateViewController" customModule="MyDate" customModuleProvider="target">
+            <connections>
+                <outlet property="myDatePicker" destination="hAY-oQ-Cz8" id="9jS-bt-Sm2"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="501" height="248"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="hAY-oQ-Cz8">
+                    <rect key="frame" x="0.0" y="44" width="501" height="204"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="204" id="5AT-VK-sTf"/>
+                    </constraints>
+                    <date key="date" timeIntervalSinceReferenceDate="480122655.64711601">
+                        <!--2016-03-19 23:24:15 +0000-->
+                    </date>
+                    <locale key="locale" localeIdentifier="zh_CN"/>
+                </datePicker>
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N3P-QM-my0">
+                    <rect key="frame" x="0.0" y="0.0" width="501" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="rm5-D4-Z7N"/>
+                    </constraints>
+                    <items>
+                        <navigationItem id="I2K-zm-mSo">
+                            <barButtonItem key="leftBarButtonItem" title="Cancel" id="pRh-O3-Muk">
+                                <connections>
+                                    <action selector="cancelAct:" destination="-1" id="pio-ko-vSU"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem key="rightBarButtonItem" title="Done" id="IF2-Ny-2s5">
+                                <connections>
+                                    <action selector="doneAct:" destination="-1" id="h0G-Gs-VAa"/>
+                                </connections>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="hAY-oQ-Cz8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="bnb-Oh-yxd"/>
+                <constraint firstAttribute="trailing" secondItem="N3P-QM-my0" secondAttribute="trailing" id="iL8-eR-e5s"/>
+                <constraint firstItem="N3P-QM-my0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="jcz-me-58w"/>
+                <constraint firstAttribute="bottom" secondItem="hAY-oQ-Cz8" secondAttribute="bottom" id="lnA-4I-AdJ"/>
+                <constraint firstItem="hAY-oQ-Cz8" firstAttribute="top" secondItem="N3P-QM-my0" secondAttribute="bottom" id="u0a-SL-VNt"/>
+                <constraint firstAttribute="trailing" secondItem="hAY-oQ-Cz8" secondAttribute="trailing" id="zdD-4W-ctD"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="255.5" y="250"/>
+        </view>
+    </objects>
+</document>
