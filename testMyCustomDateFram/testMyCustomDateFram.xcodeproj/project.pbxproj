@@ -1,0 +1,542 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C72FD3D1C9E1E7000E92574 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C72FD3C1C9E1E7000E92574 /* AppDelegate.swift */; };
+		4C72FD3F1C9E1E7000E92574 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C72FD3E1C9E1E7000E92574 /* ViewController.swift */; };
+		4C72FD421C9E1E7000E92574 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C72FD401C9E1E7000E92574 /* Main.storyboard */; };
+		4C72FD451C9E1E7000E92574 /* testMyCustomDateFram.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4C72FD431C9E1E7000E92574 /* testMyCustomDateFram.xcdatamodeld */; };
+		4C72FD471C9E1E7000E92574 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C72FD461C9E1E7000E92574 /* Assets.xcassets */; };
+		4C72FD4A1C9E1E7000E92574 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C72FD481C9E1E7000E92574 /* LaunchScreen.storyboard */; };
+		4C72FD551C9E1E7000E92574 /* testMyCustomDateFramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C72FD541C9E1E7000E92574 /* testMyCustomDateFramTests.swift */; };
+		4C72FD601C9E1E7000E92574 /* testMyCustomDateFramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C72FD5F1C9E1E7000E92574 /* testMyCustomDateFramUITests.swift */; };
+		4C72FD6E1C9E1F2300E92574 /* MyDate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C72FD6D1C9E1F2300E92574 /* MyDate.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4C72FD511C9E1E7000E92574 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C72FD311C9E1E7000E92574 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C72FD381C9E1E7000E92574;
+			remoteInfo = testMyCustomDateFram;
+		};
+		4C72FD5C1C9E1E7000E92574 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C72FD311C9E1E7000E92574 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C72FD381C9E1E7000E92574;
+			remoteInfo = testMyCustomDateFram;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4C72FD391C9E1E7000E92574 /* testMyCustomDateFram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testMyCustomDateFram.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C72FD3C1C9E1E7000E92574 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4C72FD3E1C9E1E7000E92574 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4C72FD411C9E1E7000E92574 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4C72FD441C9E1E7000E92574 /* testMyCustomDateFram.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = testMyCustomDateFram.xcdatamodel; sourceTree = "<group>"; };
+		4C72FD461C9E1E7000E92574 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4C72FD491C9E1E7000E92574 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4C72FD4B1C9E1E7000E92574 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C72FD501C9E1E7000E92574 /* testMyCustomDateFramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testMyCustomDateFramTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C72FD541C9E1E7000E92574 /* testMyCustomDateFramTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testMyCustomDateFramTests.swift; sourceTree = "<group>"; };
+		4C72FD561C9E1E7000E92574 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C72FD5B1C9E1E7000E92574 /* testMyCustomDateFramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testMyCustomDateFramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C72FD5F1C9E1E7000E92574 /* testMyCustomDateFramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testMyCustomDateFramUITests.swift; sourceTree = "<group>"; };
+		4C72FD611C9E1E7000E92574 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C72FD6D1C9E1F2300E92574 /* MyDate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MyDate.framework; path = "MyDate/build/Debug-iphoneos/MyDate.framework"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4C72FD361C9E1E7000E92574 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C72FD6E1C9E1F2300E92574 /* MyDate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C72FD4D1C9E1E7000E92574 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C72FD581C9E1E7000E92574 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4C72FD301C9E1E7000E92574 = {
+			isa = PBXGroup;
+			children = (
+				4C72FD6D1C9E1F2300E92574 /* MyDate.framework */,
+				4C72FD3B1C9E1E7000E92574 /* testMyCustomDateFram */,
+				4C72FD531C9E1E7000E92574 /* testMyCustomDateFramTests */,
+				4C72FD5E1C9E1E7000E92574 /* testMyCustomDateFramUITests */,
+				4C72FD3A1C9E1E7000E92574 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4C72FD3A1C9E1E7000E92574 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C72FD391C9E1E7000E92574 /* testMyCustomDateFram.app */,
+				4C72FD501C9E1E7000E92574 /* testMyCustomDateFramTests.xctest */,
+				4C72FD5B1C9E1E7000E92574 /* testMyCustomDateFramUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4C72FD3B1C9E1E7000E92574 /* testMyCustomDateFram */ = {
+			isa = PBXGroup;
+			children = (
+				4C72FD3C1C9E1E7000E92574 /* AppDelegate.swift */,
+				4C72FD3E1C9E1E7000E92574 /* ViewController.swift */,
+				4C72FD401C9E1E7000E92574 /* Main.storyboard */,
+				4C72FD461C9E1E7000E92574 /* Assets.xcassets */,
+				4C72FD481C9E1E7000E92574 /* LaunchScreen.storyboard */,
+				4C72FD4B1C9E1E7000E92574 /* Info.plist */,
+				4C72FD431C9E1E7000E92574 /* testMyCustomDateFram.xcdatamodeld */,
+			);
+			path = testMyCustomDateFram;
+			sourceTree = "<group>";
+		};
+		4C72FD531C9E1E7000E92574 /* testMyCustomDateFramTests */ = {
+			isa = PBXGroup;
+			children = (
+				4C72FD541C9E1E7000E92574 /* testMyCustomDateFramTests.swift */,
+				4C72FD561C9E1E7000E92574 /* Info.plist */,
+			);
+			path = testMyCustomDateFramTests;
+			sourceTree = "<group>";
+		};
+		4C72FD5E1C9E1E7000E92574 /* testMyCustomDateFramUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4C72FD5F1C9E1E7000E92574 /* testMyCustomDateFramUITests.swift */,
+				4C72FD611C9E1E7000E92574 /* Info.plist */,
+			);
+			path = testMyCustomDateFramUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4C72FD381C9E1E7000E92574 /* testMyCustomDateFram */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C72FD641C9E1E7000E92574 /* Build configuration list for PBXNativeTarget "testMyCustomDateFram" */;
+			buildPhases = (
+				4C72FD351C9E1E7000E92574 /* Sources */,
+				4C72FD361C9E1E7000E92574 /* Frameworks */,
+				4C72FD371C9E1E7000E92574 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = testMyCustomDateFram;
+			productName = testMyCustomDateFram;
+			productReference = 4C72FD391C9E1E7000E92574 /* testMyCustomDateFram.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4C72FD4F1C9E1E7000E92574 /* testMyCustomDateFramTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C72FD671C9E1E7000E92574 /* Build configuration list for PBXNativeTarget "testMyCustomDateFramTests" */;
+			buildPhases = (
+				4C72FD4C1C9E1E7000E92574 /* Sources */,
+				4C72FD4D1C9E1E7000E92574 /* Frameworks */,
+				4C72FD4E1C9E1E7000E92574 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4C72FD521C9E1E7000E92574 /* PBXTargetDependency */,
+			);
+			name = testMyCustomDateFramTests;
+			productName = testMyCustomDateFramTests;
+			productReference = 4C72FD501C9E1E7000E92574 /* testMyCustomDateFramTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4C72FD5A1C9E1E7000E92574 /* testMyCustomDateFramUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C72FD6A1C9E1E7000E92574 /* Build configuration list for PBXNativeTarget "testMyCustomDateFramUITests" */;
+			buildPhases = (
+				4C72FD571C9E1E7000E92574 /* Sources */,
+				4C72FD581C9E1E7000E92574 /* Frameworks */,
+				4C72FD591C9E1E7000E92574 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4C72FD5D1C9E1E7000E92574 /* PBXTargetDependency */,
+			);
+			name = testMyCustomDateFramUITests;
+			productName = testMyCustomDateFramUITests;
+			productReference = 4C72FD5B1C9E1E7000E92574 /* testMyCustomDateFramUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4C72FD311C9E1E7000E92574 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = CAIZHILI;
+				TargetAttributes = {
+					4C72FD381C9E1E7000E92574 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = Z57UFX3XL2;
+					};
+					4C72FD4F1C9E1E7000E92574 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = Z57UFX3XL2;
+						TestTargetID = 4C72FD381C9E1E7000E92574;
+					};
+					4C72FD5A1C9E1E7000E92574 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = Z57UFX3XL2;
+						TestTargetID = 4C72FD381C9E1E7000E92574;
+					};
+				};
+			};
+			buildConfigurationList = 4C72FD341C9E1E7000E92574 /* Build configuration list for PBXProject "testMyCustomDateFram" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4C72FD301C9E1E7000E92574;
+			productRefGroup = 4C72FD3A1C9E1E7000E92574 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4C72FD381C9E1E7000E92574 /* testMyCustomDateFram */,
+				4C72FD4F1C9E1E7000E92574 /* testMyCustomDateFramTests */,
+				4C72FD5A1C9E1E7000E92574 /* testMyCustomDateFramUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4C72FD371C9E1E7000E92574 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C72FD4A1C9E1E7000E92574 /* LaunchScreen.storyboard in Resources */,
+				4C72FD471C9E1E7000E92574 /* Assets.xcassets in Resources */,
+				4C72FD421C9E1E7000E92574 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C72FD4E1C9E1E7000E92574 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C72FD591C9E1E7000E92574 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4C72FD351C9E1E7000E92574 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C72FD3F1C9E1E7000E92574 /* ViewController.swift in Sources */,
+				4C72FD451C9E1E7000E92574 /* testMyCustomDateFram.xcdatamodeld in Sources */,
+				4C72FD3D1C9E1E7000E92574 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C72FD4C1C9E1E7000E92574 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C72FD551C9E1E7000E92574 /* testMyCustomDateFramTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C72FD571C9E1E7000E92574 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C72FD601C9E1E7000E92574 /* testMyCustomDateFramUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4C72FD521C9E1E7000E92574 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C72FD381C9E1E7000E92574 /* testMyCustomDateFram */;
+			targetProxy = 4C72FD511C9E1E7000E92574 /* PBXContainerItemProxy */;
+		};
+		4C72FD5D1C9E1E7000E92574 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C72FD381C9E1E7000E92574 /* testMyCustomDateFram */;
+			targetProxy = 4C72FD5C1C9E1E7000E92574 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4C72FD401C9E1E7000E92574 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C72FD411C9E1E7000E92574 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4C72FD481C9E1E7000E92574 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C72FD491C9E1E7000E92574 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4C72FD621C9E1E7000E92574 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4C72FD631C9E1E7000E92574 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4C72FD651C9E1E7000E92574 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MyDate/build/Debug-iphoneos",
+				);
+				INFOPLIST_FILE = testMyCustomDateFram/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = no.testMyCustomDateFram;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4C72FD661C9E1E7000E92574 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MyDate/build/Debug-iphoneos",
+				);
+				INFOPLIST_FILE = testMyCustomDateFram/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = no.testMyCustomDateFram;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		4C72FD681C9E1E7000E92574 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = testMyCustomDateFramTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = no.testMyCustomDateFramTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/testMyCustomDateFram.app/testMyCustomDateFram";
+			};
+			name = Debug;
+		};
+		4C72FD691C9E1E7000E92574 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = testMyCustomDateFramTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = no.testMyCustomDateFramTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/testMyCustomDateFram.app/testMyCustomDateFram";
+			};
+			name = Release;
+		};
+		4C72FD6B1C9E1E7000E92574 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = testMyCustomDateFramUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = no.testMyCustomDateFramUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = testMyCustomDateFram;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		4C72FD6C1C9E1E7000E92574 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = testMyCustomDateFramUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = no.testMyCustomDateFramUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = testMyCustomDateFram;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4C72FD341C9E1E7000E92574 /* Build configuration list for PBXProject "testMyCustomDateFram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C72FD621C9E1E7000E92574 /* Debug */,
+				4C72FD631C9E1E7000E92574 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C72FD641C9E1E7000E92574 /* Build configuration list for PBXNativeTarget "testMyCustomDateFram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C72FD651C9E1E7000E92574 /* Debug */,
+				4C72FD661C9E1E7000E92574 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C72FD671C9E1E7000E92574 /* Build configuration list for PBXNativeTarget "testMyCustomDateFramTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C72FD681C9E1E7000E92574 /* Debug */,
+				4C72FD691C9E1E7000E92574 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C72FD6A1C9E1E7000E92574 /* Build configuration list for PBXNativeTarget "testMyCustomDateFramUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C72FD6B1C9E1E7000E92574 /* Debug */,
+				4C72FD6C1C9E1E7000E92574 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4C72FD431C9E1E7000E92574 /* testMyCustomDateFram.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4C72FD441C9E1E7000E92574 /* testMyCustomDateFram.xcdatamodel */,
+			);
+			currentVersion = 4C72FD441C9E1E7000E92574 /* testMyCustomDateFram.xcdatamodel */;
+			path = testMyCustomDateFram.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4C72FD311C9E1E7000E92574 /* Project object */;
+}

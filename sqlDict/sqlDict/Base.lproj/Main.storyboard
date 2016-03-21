@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="sqlDict" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SBC-dL-9Vy">
+                                <rect key="frame" x="147" y="53" width="307" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="307" id="9vS-rz-sn3"/>
+                                    <constraint firstAttribute="height" constant="30" id="FVZ-8s-NPP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="finishEdit:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="B87-wL-NPe"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yYE-2S-kmx">
+                                <rect key="frame" x="147" y="210" width="307" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="finishEdit:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="00A-5y-h6U"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7zf-dA-g0N">
+                                <rect key="frame" x="219" y="164" width="162" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="54p-dI-nc5"/>
+                                    <constraint firstAttribute="width" constant="162" id="cMx-9q-7SA"/>
+                                </constraints>
+                                <state key="normal" title="添加"/>
+                                <connections>
+                                    <action selector="addWord:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TWT-ID-62k"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sXd-06-j6c">
+                                <rect key="frame" x="219" y="268" width="162" height="30"/>
+                                <state key="normal" title="查找"/>
+                                <connections>
+                                    <action selector="queryAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Whz-Ea-GwZ"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="HM9-KQ-LEG">
+                                <rect key="frame" x="142" y="340" width="317" height="189"/>
+                                <color key="backgroundColor" red="0.17722250789999999" green="1" blue="0.99342194669999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="317" id="cfk-Yp-rBO"/>
+                                    <constraint firstAttribute="height" constant="189" id="clI-BI-ceo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2sf-kb-pfX">
+                                <rect key="frame" x="147" y="107" width="307" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="finishEdit:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="aZy-AE-Fwx"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yYE-2S-kmx" firstAttribute="leading" secondItem="2sf-kb-pfX" secondAttribute="leading" id="4bX-AI-BKR"/>
+                            <constraint firstItem="SBC-dL-9Vy" firstAttribute="width" secondItem="2sf-kb-pfX" secondAttribute="width" id="561-J3-Q4T"/>
+                            <constraint firstItem="SBC-dL-9Vy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7TN-2M-mre"/>
+                            <constraint firstItem="yYE-2S-kmx" firstAttribute="height" secondItem="2sf-kb-pfX" secondAttribute="height" id="9Ze-2S-7HK"/>
+                            <constraint firstItem="SBC-dL-9Vy" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="33" id="9sR-NX-QKb"/>
+                            <constraint firstItem="7zf-dA-g0N" firstAttribute="top" secondItem="2sf-kb-pfX" secondAttribute="bottom" constant="27" id="Fvb-u3-ENe"/>
+                            <constraint firstItem="sXd-06-j6c" firstAttribute="top" secondItem="yYE-2S-kmx" secondAttribute="bottom" constant="28" id="J4R-KL-MYu"/>
+                            <constraint firstItem="yYE-2S-kmx" firstAttribute="top" secondItem="7zf-dA-g0N" secondAttribute="bottom" constant="16" id="Kmq-6P-rxn"/>
+                            <constraint firstItem="sXd-06-j6c" firstAttribute="leading" secondItem="7zf-dA-g0N" secondAttribute="leading" id="KwS-pe-GJq"/>
+                            <constraint firstItem="HM9-KQ-LEG" firstAttribute="top" secondItem="sXd-06-j6c" secondAttribute="bottom" constant="42" id="SPB-xc-hWv"/>
+                            <constraint firstItem="7zf-dA-g0N" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TCf-Cm-xUE"/>
+                            <constraint firstItem="sXd-06-j6c" firstAttribute="height" secondItem="7zf-dA-g0N" secondAttribute="height" id="Tjs-H1-lyi"/>
+                            <constraint firstItem="SBC-dL-9Vy" firstAttribute="leading" secondItem="2sf-kb-pfX" secondAttribute="leading" id="bf6-12-Nc3"/>
+                            <constraint firstItem="SBC-dL-9Vy" firstAttribute="height" secondItem="2sf-kb-pfX" secondAttribute="height" id="jld-Pw-IWH"/>
+                            <constraint firstItem="sXd-06-j6c" firstAttribute="width" secondItem="7zf-dA-g0N" secondAttribute="width" id="p4n-t6-8Ie"/>
+                            <constraint firstItem="2sf-kb-pfX" firstAttribute="top" secondItem="SBC-dL-9Vy" secondAttribute="bottom" constant="24" id="qed-Iv-Ab2"/>
+                            <constraint firstItem="HM9-KQ-LEG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rLs-Jb-lg7"/>
+                            <constraint firstItem="yYE-2S-kmx" firstAttribute="width" secondItem="2sf-kb-pfX" secondAttribute="width" id="yD5-A2-NvE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="detailField" destination="2sf-kb-pfX" id="WWS-38-oYL"/>
+                        <outlet property="displayView" destination="HM9-KQ-LEG" id="BOO-Hr-Nmv"/>
+                        <outlet property="queryField" destination="yYE-2S-kmx" id="kPW-NG-Nri"/>
+                        <outlet property="wordField" destination="SBC-dL-9Vy" id="3CW-L1-BgX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="441"/>
+        </scene>
+    </scenes>
+</document>

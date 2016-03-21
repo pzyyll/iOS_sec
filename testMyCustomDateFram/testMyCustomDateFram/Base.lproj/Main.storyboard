@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="testMyCustomDateFram" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ype-VY-fUb">
+                                <rect key="frame" x="28" y="205" width="544" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="zwa-Mu-ira"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cDF-Uc-L1T">
+                                <rect key="frame" x="90" y="84" width="420" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="fP7-y0-63L"/>
+                                </constraints>
+                                <state key="normal" title="弹出日期选择器">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="popDateP:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2HX-dI-Zmf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T6D-nr-18f">
+                                <rect key="frame" x="90" y="137" width="420" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="T6D-nr-18f" firstAttribute="height" secondItem="cDF-Uc-L1T" secondAttribute="height" id="4qU-ci-IgT"/>
+                            <constraint firstItem="Ype-VY-fUb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="AAu-gf-6eu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ype-VY-fUb" secondAttribute="trailing" constant="8" id="K6U-9r-bx5"/>
+                            <constraint firstItem="cDF-Uc-L1T" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="70" id="NDq-Jc-wXe"/>
+                            <constraint firstItem="cDF-Uc-L1T" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="64" id="XNr-56-dT9"/>
+                            <constraint firstItem="T6D-nr-18f" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="70" id="d1s-kO-c6Q"/>
+                            <constraint firstItem="T6D-nr-18f" firstAttribute="top" secondItem="cDF-Uc-L1T" secondAttribute="bottom" constant="23" id="jWa-af-1XE"/>
+                            <constraint firstItem="Ype-VY-fUb" firstAttribute="top" secondItem="T6D-nr-18f" secondAttribute="bottom" constant="38" id="qcq-48-jxp"/>
+                            <constraint firstItem="T6D-nr-18f" firstAttribute="width" secondItem="cDF-Uc-L1T" secondAttribute="width" id="uvl-Md-Udo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cDF-Uc-L1T" secondAttribute="trailing" constant="70" id="x4d-Gj-5U3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="displayLabel" destination="Ype-VY-fUb" id="9p2-H6-S7c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="429"/>
+        </scene>
+    </scenes>
+</document>
