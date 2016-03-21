@@ -15,25 +15,43 @@ class ViewController: UIViewController {
     @IBOutlet weak var queryField: UITextField!
     @IBOutlet weak var displayView: UITextView!
     
+    var db: SQLiteDB!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 
+    //关联文本框
     @IBAction func finishEdit(sender: UITextField) {
+        sender.resignFirstResponder()
     }
 
     @IBAction func addWord(sender: AnyObject) {
+        db.execute("create table if not exists t_dict(uid integer primary key, word varchar(20), detail varchar(50))")
         
+        self.saveWord()
     }
     
     @IBAction func queryAction(sender: AnyObject) {
         
+    }
+    
+    func saveWord() {
+        let word = self.wordField.text
+        let detail = self.detailField.text
+        if (word?.characters.count > 0 && detail?.characters.count > 0) {
+            let sql = "insert into t_dict(word, detail) values('\(word!)','\(detail)')"
+            print(sql)
+            let res = db.execute(sql)
+            print(res)
+        }
     }
 }
 
