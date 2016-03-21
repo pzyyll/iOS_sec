@@ -19,6 +19,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.db = SQLiteDB.sharedInstance()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -40,14 +42,26 @@ class ViewController: UIViewController {
     }
     
     @IBAction func queryAction(sender: AnyObject) {
+        let sql = "select * from t_dict where word = '\(self.queryField.text!)'"
+        //let sql = "select * from t_dict"
+        let data = db.query(sql)
+        self.displayView.text.removeAll()
+        if data.count != 0 {
+            for u in data {
+                self.displayView.text! += "单词：\(u["word"] as! String)\n解释：\(u["detail"] as! String)\n"
+            }
+        }
         
+//        for u in data {
+//            self.displayView.text! += "单词：\(u["word"] as! String)\n解释：\(u["detail"] as! String)"
+//        }
     }
     
     func saveWord() {
         let word = self.wordField.text
         let detail = self.detailField.text
         if (word?.characters.count > 0 && detail?.characters.count > 0) {
-            let sql = "insert into t_dict(word, detail) values('\(word!)','\(detail)')"
+            let sql = "insert into t_dict(word, detail) values('\(word!)','\(detail!)')"
             print(sql)
             let res = db.execute(sql)
             print(res)
