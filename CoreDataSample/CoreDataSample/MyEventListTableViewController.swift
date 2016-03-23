@@ -14,6 +14,17 @@ class MyEventListTableViewController: UITableViewController {
     var appDelegate: AppDelegate!
     var eventArray: NSMutableArray!
     
+    @IBOutlet weak var delBtn: UIBarButtonItem!
+    @IBAction func delAction(sender: AnyObject) {
+        if (self.delBtn.title == "Del") {
+            self.tableView.setEditing(true, animated: true)
+            self.delBtn.title = "Finish"
+        } else {
+            self.tableView.setEditing(false, animated: true)
+            self.delBtn.title = "Del"
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -52,23 +63,27 @@ class MyEventListTableViewController: UITableViewController {
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return eventArray.count
     }
 
-    /*
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("event", forIndexPath: indexPath)
 
         // Configure the cell...
-
+        let test: MyEvent  = self.eventArray![indexPath.row] as! MyEvent
+        
+        cell.textLabel?.text = test.name
+        cell.detailTextLabel?.text = test.happenDate?.description
+        
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
@@ -78,17 +93,32 @@ class MyEventListTableViewController: UITableViewController {
     }
     */
 
-    /*
+    override func tableView(tableView: UITableView, titleForDeleteConfirmationButtonForRowAtIndexPath indexPath: NSIndexPath) -> String? {
+        return "确认删除"
+    }
+    
+    
     // Override to support editing the table view.
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == .Delete {
             // Delete the row from the data source
+            let deleteEvent: MyEvent = self.eventArray[indexPath.row] as! MyEvent
+            self.appDelegate.managedObjContext?.deleteObject(deleteEvent)
+            do {
+                try self.appDelegate.managedObjContext?.save()
+                eventArray.removeObject(deleteEvent)
+                tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
+                
+            } catch let er as NSError {
+                print(er.userInfo)
+            }
+            
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
         } else if editingStyle == .Insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
     }
-    */
+    
 
     /*
     // Override to support rearranging the table view.

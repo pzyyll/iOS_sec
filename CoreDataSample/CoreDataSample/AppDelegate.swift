@@ -114,7 +114,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             abort()
         }
         
-        return NSPersistentStoreCoordinator()
+        return self.persistentStoreCoordinator!
     }
     
     func applicationDocDir() -> NSURL {
