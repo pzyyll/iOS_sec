@@ -1,0 +1,809 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C3B66DC1CB51AE40024CBF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3B66DB1CB51AE40024CBF8 /* AppDelegate.swift */; };
+		4C3B66DE1CB51AE40024CBF8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3B66DD1CB51AE40024CBF8 /* ViewController.swift */; };
+		4C3B66E11CB51AE40024CBF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C3B66DF1CB51AE40024CBF8 /* Main.storyboard */; };
+		4C3B66E31CB51AE40024CBF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C3B66E21CB51AE40024CBF8 /* Assets.xcassets */; };
+		4C3B66E61CB51AE50024CBF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C3B66E41CB51AE50024CBF8 /* LaunchScreen.storyboard */; };
+		4C3B66F11CB51AE50024CBF8 /* LoginVVVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3B66F01CB51AE50024CBF8 /* LoginVVVTests.swift */; };
+		4C3B66FC1CB51AE50024CBF8 /* LoginVVVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3B66FB1CB51AE50024CBF8 /* LoginVVVUITests.swift */; };
+		4C3B670F1CB528710024CBF8 /* ROMainPaperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3B670E1CB528710024CBF8 /* ROMainPaperViewController.swift */; };
+		4C3B67111CB528920024CBF8 /* ROLogRegPagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3B67101CB528920024CBF8 /* ROLogRegPagerViewController.swift */; };
+		4C4E73071CB54872002D8926 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 4C4E73031CB54872002D8926 /* LICENSE */; };
+		4C4E73081CB54872002D8926 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4E73051CB54872002D8926 /* MBProgressHUD.m */; };
+		4C4E73201CB54FCA002D8926 /* ROHUD+MBProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4E731F1CB54FCA002D8926 /* ROHUD+MBProgressHUD.swift */; };
+		4C9C20BB1CB603B4006465A7 /* WebAniViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9C20BA1CB603B4006465A7 /* WebAniViewController.swift */; };
+		E5537363621B4D040A19D8E0 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F133F46E44D824490D6A60F /* Pods.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4C3B66ED1CB51AE50024CBF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C3B66D01CB51AE40024CBF8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C3B66D71CB51AE40024CBF8;
+			remoteInfo = LoginVVV;
+		};
+		4C3B66F81CB51AE50024CBF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C3B66D01CB51AE40024CBF8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C3B66D71CB51AE40024CBF8;
+			remoteInfo = LoginVVV;
+		};
+		4CA8464B1CB546210069DC56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4CA846281CB5444C0069DC56 /* AFNetworking.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 299522391BBF104D00859F49;
+			remoteInfo = "AFNetworking iOS";
+		};
+		4CA8464D1CB546210069DC56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4CA846281CB5444C0069DC56 /* AFNetworking.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 299522651BBF129200859F49;
+			remoteInfo = "AFNetworking watchOS";
+		};
+		4CA8464F1CB546210069DC56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4CA846281CB5444C0069DC56 /* AFNetworking.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 299522771BBF136400859F49;
+			remoteInfo = "AFNetworking OS X";
+		};
+		4CA846511CB546210069DC56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4CA846281CB5444C0069DC56 /* AFNetworking.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2987B0A51BC408A200179A4C;
+			remoteInfo = "AFNetworking tvOS";
+		};
+		4CA846531CB546210069DC56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4CA846281CB5444C0069DC56 /* AFNetworking.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 298D7C3B1BC2C79500FD3B3E;
+			remoteInfo = "AFNetworking iOS Tests";
+		};
+		4CA846551CB546210069DC56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4CA846281CB5444C0069DC56 /* AFNetworking.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 298D7C4A1BC2C7B200FD3B3E;
+			remoteInfo = "AFNetworking Mac OS X Tests";
+		};
+		4CA846571CB546210069DC56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4CA846281CB5444C0069DC56 /* AFNetworking.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2987B0AE1BC408A200179A4C;
+			remoteInfo = "AFNetworking tvOS Tests";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		065B92A1C1D85CF48044C38F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		47CD67A2419A308F68F65A01 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		4C3B66D81CB51AE40024CBF8 /* LoginVVV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginVVV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C3B66DB1CB51AE40024CBF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4C3B66DD1CB51AE40024CBF8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4C3B66E01CB51AE40024CBF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4C3B66E21CB51AE40024CBF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4C3B66E51CB51AE50024CBF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4C3B66E71CB51AE50024CBF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C3B66EC1CB51AE50024CBF8 /* LoginVVVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginVVVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C3B66F01CB51AE50024CBF8 /* LoginVVVTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVVVTests.swift; sourceTree = "<group>"; };
+		4C3B66F21CB51AE50024CBF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C3B66F71CB51AE50024CBF8 /* LoginVVVUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginVVVUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C3B66FB1CB51AE50024CBF8 /* LoginVVVUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVVVUITests.swift; sourceTree = "<group>"; };
+		4C3B66FD1CB51AE50024CBF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C3B670E1CB528710024CBF8 /* ROMainPaperViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ROMainPaperViewController.swift; path = UI/ROMainPaperViewController.swift; sourceTree = "<group>"; };
+		4C3B67101CB528920024CBF8 /* ROLogRegPagerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ROLogRegPagerViewController.swift; path = UI/ROLogRegPagerViewController.swift; sourceTree = "<group>"; };
+		4C4E73031CB54872002D8926 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		4C4E73041CB54872002D8926 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		4C4E73051CB54872002D8926 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		4C4E73061CB54872002D8926 /* README.mdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.mdown; sourceTree = "<group>"; };
+		4C4E731F1CB54FCA002D8926 /* ROHUD+MBProgressHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ROHUD+MBProgressHUD.swift"; path = "Common/ROHUD+MBProgressHUD.swift"; sourceTree = "<group>"; };
+		4C9C20BA1CB603B4006465A7 /* WebAniViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebAniViewController.swift; sourceTree = "<group>"; };
+		4CA846281CB5444C0069DC56 /* AFNetworking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AFNetworking.xcodeproj; path = "AFNetworking-master/AFNetworking.xcodeproj"; sourceTree = "<group>"; };
+		4CA846411CB544A60069DC56 /* RO-Bri-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RO-Bri-Header.h"; sourceTree = "<group>"; };
+		7F133F46E44D824490D6A60F /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4C3B66D51CB51AE40024CBF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5537363621B4D040A19D8E0 /* Pods.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C3B66E91CB51AE50024CBF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C3B66F41CB51AE50024CBF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		015991F8986FC092A4DFF255 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				47CD67A2419A308F68F65A01 /* Pods.debug.xcconfig */,
+				065B92A1C1D85CF48044C38F /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		382ED7815BF4E1034EBAD339 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F133F46E44D824490D6A60F /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4C3B66CF1CB51AE40024CBF8 = {
+			isa = PBXGroup;
+			children = (
+				4CA846281CB5444C0069DC56 /* AFNetworking.xcodeproj */,
+				4C3B66DA1CB51AE40024CBF8 /* LoginVVV */,
+				4C4E73021CB54872002D8926 /* MBProgressHUD */,
+				4C3B66EF1CB51AE50024CBF8 /* LoginVVVTests */,
+				4C3B66FA1CB51AE50024CBF8 /* LoginVVVUITests */,
+				4C3B66D91CB51AE40024CBF8 /* Products */,
+				015991F8986FC092A4DFF255 /* Pods */,
+				382ED7815BF4E1034EBAD339 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4C3B66D91CB51AE40024CBF8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C3B66D81CB51AE40024CBF8 /* LoginVVV.app */,
+				4C3B66EC1CB51AE50024CBF8 /* LoginVVVTests.xctest */,
+				4C3B66F71CB51AE50024CBF8 /* LoginVVVUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4C3B66DA1CB51AE40024CBF8 /* LoginVVV */ = {
+			isa = PBXGroup;
+			children = (
+				4C4E731C1CB54F81002D8926 /* Common */,
+				4C3B67091CB5279B0024CBF8 /* UI */,
+				4C3B66E71CB51AE50024CBF8 /* Info.plist */,
+				4CA846411CB544A60069DC56 /* RO-Bri-Header.h */,
+			);
+			path = LoginVVV;
+			sourceTree = "<group>";
+		};
+		4C3B66EF1CB51AE50024CBF8 /* LoginVVVTests */ = {
+			isa = PBXGroup;
+			children = (
+				4C3B66F01CB51AE50024CBF8 /* LoginVVVTests.swift */,
+				4C3B66F21CB51AE50024CBF8 /* Info.plist */,
+			);
+			path = LoginVVVTests;
+			sourceTree = "<group>";
+		};
+		4C3B66FA1CB51AE50024CBF8 /* LoginVVVUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4C3B66FB1CB51AE50024CBF8 /* LoginVVVUITests.swift */,
+				4C3B66FD1CB51AE50024CBF8 /* Info.plist */,
+			);
+			path = LoginVVVUITests;
+			sourceTree = "<group>";
+		};
+		4C3B67091CB5279B0024CBF8 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				4C3B670A1CB527A10024CBF8 /* LogReg */,
+				4C3B66DB1CB51AE40024CBF8 /* AppDelegate.swift */,
+				4C3B66DD1CB51AE40024CBF8 /* ViewController.swift */,
+				4C3B66DF1CB51AE40024CBF8 /* Main.storyboard */,
+				4C3B66E21CB51AE40024CBF8 /* Assets.xcassets */,
+				4C3B66E41CB51AE50024CBF8 /* LaunchScreen.storyboard */,
+				4C9C20BA1CB603B4006465A7 /* WebAniViewController.swift */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		4C3B670A1CB527A10024CBF8 /* LogReg */ = {
+			isa = PBXGroup;
+			children = (
+				4C3B670D1CB527D50024CBF8 /* MainPaper */,
+				4C3B670C1CB527C80024CBF8 /* LogRegPaper */,
+			);
+			name = LogReg;
+			sourceTree = "<group>";
+		};
+		4C3B670C1CB527C80024CBF8 /* LogRegPaper */ = {
+			isa = PBXGroup;
+			children = (
+				4C3B67101CB528920024CBF8 /* ROLogRegPagerViewController.swift */,
+			);
+			name = LogRegPaper;
+			sourceTree = "<group>";
+		};
+		4C3B670D1CB527D50024CBF8 /* MainPaper */ = {
+			isa = PBXGroup;
+			children = (
+				4C3B670E1CB528710024CBF8 /* ROMainPaperViewController.swift */,
+			);
+			name = MainPaper;
+			sourceTree = "<group>";
+		};
+		4C4E73021CB54872002D8926 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				4C4E73031CB54872002D8926 /* LICENSE */,
+				4C4E73041CB54872002D8926 /* MBProgressHUD.h */,
+				4C4E73051CB54872002D8926 /* MBProgressHUD.m */,
+				4C4E73061CB54872002D8926 /* README.mdown */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		4C4E731C1CB54F81002D8926 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				4C4E731E1CB54F91002D8926 /* Category */,
+				4C4E731D1CB54F8B002D8926 /* Tool */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		4C4E731D1CB54F8B002D8926 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Tool;
+			sourceTree = "<group>";
+		};
+		4C4E731E1CB54F91002D8926 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				4C4E731F1CB54FCA002D8926 /* ROHUD+MBProgressHUD.swift */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
+		4CA846421CB546210069DC56 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4CA8464C1CB546210069DC56 /* AFNetworking.framework */,
+				4CA8464E1CB546210069DC56 /* AFNetworking.framework */,
+				4CA846501CB546210069DC56 /* AFNetworking.framework */,
+				4CA846521CB546210069DC56 /* AFNetworking.framework */,
+				4CA846541CB546210069DC56 /* AFNetworking iOS Tests.xctest */,
+				4CA846561CB546210069DC56 /* AFNetworking Mac OS X Tests.xctest */,
+				4CA846581CB546210069DC56 /* AFNetworking tvOS Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4C3B66D71CB51AE40024CBF8 /* LoginVVV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C3B67001CB51AE50024CBF8 /* Build configuration list for PBXNativeTarget "LoginVVV" */;
+			buildPhases = (
+				912C698A93BC4698348A815C /* Check Pods Manifest.lock */,
+				4C3B66D41CB51AE40024CBF8 /* Sources */,
+				4C3B66D51CB51AE40024CBF8 /* Frameworks */,
+				4C3B66D61CB51AE40024CBF8 /* Resources */,
+				DD8C69E98B9AC96A9E93D03F /* Embed Pods Frameworks */,
+				7FDD3E7048A930FFDE3B17DA /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LoginVVV;
+			productName = LoginVVV;
+			productReference = 4C3B66D81CB51AE40024CBF8 /* LoginVVV.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4C3B66EB1CB51AE50024CBF8 /* LoginVVVTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C3B67031CB51AE50024CBF8 /* Build configuration list for PBXNativeTarget "LoginVVVTests" */;
+			buildPhases = (
+				4C3B66E81CB51AE50024CBF8 /* Sources */,
+				4C3B66E91CB51AE50024CBF8 /* Frameworks */,
+				4C3B66EA1CB51AE50024CBF8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4C3B66EE1CB51AE50024CBF8 /* PBXTargetDependency */,
+			);
+			name = LoginVVVTests;
+			productName = LoginVVVTests;
+			productReference = 4C3B66EC1CB51AE50024CBF8 /* LoginVVVTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4C3B66F61CB51AE50024CBF8 /* LoginVVVUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C3B67061CB51AE50024CBF8 /* Build configuration list for PBXNativeTarget "LoginVVVUITests" */;
+			buildPhases = (
+				4C3B66F31CB51AE50024CBF8 /* Sources */,
+				4C3B66F41CB51AE50024CBF8 /* Frameworks */,
+				4C3B66F51CB51AE50024CBF8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4C3B66F91CB51AE50024CBF8 /* PBXTargetDependency */,
+			);
+			name = LoginVVVUITests;
+			productName = LoginVVVUITests;
+			productReference = 4C3B66F71CB51AE50024CBF8 /* LoginVVVUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4C3B66D01CB51AE40024CBF8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = CAIZHILI;
+				TargetAttributes = {
+					4C3B66D71CB51AE40024CBF8 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = Z57UFX3XL2;
+					};
+					4C3B66EB1CB51AE50024CBF8 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = Z57UFX3XL2;
+						TestTargetID = 4C3B66D71CB51AE40024CBF8;
+					};
+					4C3B66F61CB51AE50024CBF8 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = Z57UFX3XL2;
+						TestTargetID = 4C3B66D71CB51AE40024CBF8;
+					};
+				};
+			};
+			buildConfigurationList = 4C3B66D31CB51AE40024CBF8 /* Build configuration list for PBXProject "LoginVVV" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4C3B66CF1CB51AE40024CBF8;
+			productRefGroup = 4C3B66D91CB51AE40024CBF8 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 4CA846421CB546210069DC56 /* Products */;
+					ProjectRef = 4CA846281CB5444C0069DC56 /* AFNetworking.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				4C3B66D71CB51AE40024CBF8 /* LoginVVV */,
+				4C3B66EB1CB51AE50024CBF8 /* LoginVVVTests */,
+				4C3B66F61CB51AE50024CBF8 /* LoginVVVUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		4CA8464C1CB546210069DC56 /* AFNetworking.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AFNetworking.framework;
+			remoteRef = 4CA8464B1CB546210069DC56 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4CA8464E1CB546210069DC56 /* AFNetworking.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AFNetworking.framework;
+			remoteRef = 4CA8464D1CB546210069DC56 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4CA846501CB546210069DC56 /* AFNetworking.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AFNetworking.framework;
+			remoteRef = 4CA8464F1CB546210069DC56 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4CA846521CB546210069DC56 /* AFNetworking.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AFNetworking.framework;
+			remoteRef = 4CA846511CB546210069DC56 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4CA846541CB546210069DC56 /* AFNetworking iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "AFNetworking iOS Tests.xctest";
+			remoteRef = 4CA846531CB546210069DC56 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4CA846561CB546210069DC56 /* AFNetworking Mac OS X Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "AFNetworking Mac OS X Tests.xctest";
+			remoteRef = 4CA846551CB546210069DC56 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4CA846581CB546210069DC56 /* AFNetworking tvOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "AFNetworking tvOS Tests.xctest";
+			remoteRef = 4CA846571CB546210069DC56 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4C3B66D61CB51AE40024CBF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C3B66E61CB51AE50024CBF8 /* LaunchScreen.storyboard in Resources */,
+				4C3B66E31CB51AE40024CBF8 /* Assets.xcassets in Resources */,
+				4C4E73071CB54872002D8926 /* LICENSE in Resources */,
+				4C3B66E11CB51AE40024CBF8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C3B66EA1CB51AE50024CBF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C3B66F51CB51AE50024CBF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7FDD3E7048A930FFDE3B17DA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		912C698A93BC4698348A815C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DD8C69E98B9AC96A9E93D03F /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4C3B66D41CB51AE40024CBF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C3B66DE1CB51AE40024CBF8 /* ViewController.swift in Sources */,
+				4C9C20BB1CB603B4006465A7 /* WebAniViewController.swift in Sources */,
+				4C4E73201CB54FCA002D8926 /* ROHUD+MBProgressHUD.swift in Sources */,
+				4C3B67111CB528920024CBF8 /* ROLogRegPagerViewController.swift in Sources */,
+				4C4E73081CB54872002D8926 /* MBProgressHUD.m in Sources */,
+				4C3B670F1CB528710024CBF8 /* ROMainPaperViewController.swift in Sources */,
+				4C3B66DC1CB51AE40024CBF8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C3B66E81CB51AE50024CBF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C3B66F11CB51AE50024CBF8 /* LoginVVVTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C3B66F31CB51AE50024CBF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C3B66FC1CB51AE50024CBF8 /* LoginVVVUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4C3B66EE1CB51AE50024CBF8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C3B66D71CB51AE40024CBF8 /* LoginVVV */;
+			targetProxy = 4C3B66ED1CB51AE50024CBF8 /* PBXContainerItemProxy */;
+		};
+		4C3B66F91CB51AE50024CBF8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C3B66D71CB51AE40024CBF8 /* LoginVVV */;
+			targetProxy = 4C3B66F81CB51AE50024CBF8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4C3B66DF1CB51AE40024CBF8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C3B66E01CB51AE40024CBF8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4C3B66E41CB51AE50024CBF8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C3B66E51CB51AE50024CBF8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4C3B66FE1CB51AE50024CBF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4C3B66FF1CB51AE50024CBF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4C3B67011CB51AE50024CBF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47CD67A2419A308F68F65A01 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LoginVVV/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = no.LoginVVV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LoginVVV/RO-Bri-Header.h";
+			};
+			name = Debug;
+		};
+		4C3B67021CB51AE50024CBF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 065B92A1C1D85CF48044C38F /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LoginVVV/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = no.LoginVVV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LoginVVV/RO-Bri-Header.h";
+			};
+			name = Release;
+		};
+		4C3B67041CB51AE50024CBF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LoginVVVTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = no.LoginVVVTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LoginVVV.app/LoginVVV";
+			};
+			name = Debug;
+		};
+		4C3B67051CB51AE50024CBF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LoginVVVTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = no.LoginVVVTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LoginVVV.app/LoginVVV";
+			};
+			name = Release;
+		};
+		4C3B67071CB51AE50024CBF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LoginVVVUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = no.LoginVVVUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LoginVVV;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		4C3B67081CB51AE50024CBF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LoginVVVUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = no.LoginVVVUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LoginVVV;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4C3B66D31CB51AE40024CBF8 /* Build configuration list for PBXProject "LoginVVV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C3B66FE1CB51AE50024CBF8 /* Debug */,
+				4C3B66FF1CB51AE50024CBF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C3B67001CB51AE50024CBF8 /* Build configuration list for PBXNativeTarget "LoginVVV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C3B67011CB51AE50024CBF8 /* Debug */,
+				4C3B67021CB51AE50024CBF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C3B67031CB51AE50024CBF8 /* Build configuration list for PBXNativeTarget "LoginVVVTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C3B67041CB51AE50024CBF8 /* Debug */,
+				4C3B67051CB51AE50024CBF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C3B67061CB51AE50024CBF8 /* Build configuration list for PBXNativeTarget "LoginVVVUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C3B67071CB51AE50024CBF8 /* Debug */,
+				4C3B67081CB51AE50024CBF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4C3B66D01CB51AE40024CBF8 /* Project object */;
+}

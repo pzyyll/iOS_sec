@@ -32,7 +32,10 @@ class CollectViewController: UIViewController, UITextFieldDelegate {
         fileHandler?.seekToEndOfFile()
         fileHandler?.writeData(csvLine.dataUsingEncoding(NSUTF8StringEncoding)!)
         fileHandler?.closeFile()
+        let dict = NSMutableDictionary()
+        dict.setObject("abc", forKey: "abv")
         
+
         self.lastName.text = ""
         self.firstName.text = ""
         self.email.text = ""
@@ -48,7 +51,6 @@ class CollectViewController: UIViewController, UITextFieldDelegate {
             let fileHandler = NSFileHandle(forReadingAtPath: surveyFilePath)
             let data = fileHandler?.availableData
             self.displayView.text = String(data: data!, encoding: NSUTF8StringEncoding)
-            
         }
         
         
