@@ -43,6 +43,45 @@ class ROLogRegPagerViewController: UIViewController {
     }
     @IBAction func loginAction(sender: AnyObject) {
         MBProgressHUD.showDelayHUDToView(self.view, mess: "abc")
+        let parameters = [
+        "username": self.username.text!,
+        "pwd": self.pwd.text!,
+        "imgcode": self.checkCode.text!
+        ]
+        //var samp = dispatch_semaphore_create(0)
+        GRNetwork.shareInstance.GRNetwork_Logn(parameters, view: self.view) { (flag) in
+            if flag {
+                ACSimpleKeychain.defaultKeychain().storeUsername(self.username.text!, password: self.pwd.text!, identifier: "user1", forService: "userpassword")
+                
+                let tabBarCtr = UITabBarController()
+                
+                //one
+                let oneCtr = UIViewController()
+                oneCtr.view.backgroundColor = UIColor.blueColor()
+                let oneNavCtr = UINavigationController(rootViewController: oneCtr)
+                
+                let twoCtr = UIViewController()
+                twoCtr.view.backgroundColor = UIColor.redColor()
+                let twoNavCtr = UINavigationController(rootViewController: twoCtr)
+                
+                tabBarCtr.viewControllers = [oneNavCtr, twoNavCtr];
+                //tabBarCtr.tabBar.frame
+                let imgStr = ["bar_first", "bar_second"];
+                let titleStr = ["One", "Two"];
+                
+                var i = 0;
+                for item in tabBarCtr.tabBar.items! {
+                    item.image = UIImage(named: imgStr[i])
+                    item.title = titleStr[i]
+                    i += 1;
+                }
+                UIApplication.sharedApplication().delegate?.window!?.rootViewController = tabBarCtr
+                
+            }
+            //dispatch_semaphore_signal(samp)
+        }
+        //dispatch_semaphore_wait(samp, DISPATCH_TIME_FOREVER);
+        GRNetwork.shareInstance.show()
     }
     /*
     // MARK: - Navigation

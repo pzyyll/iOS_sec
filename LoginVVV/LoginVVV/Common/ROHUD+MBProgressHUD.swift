@@ -9,6 +9,7 @@
 import Foundation
 
 extension MBProgressHUD {
+    
     class func showDelayHUDToView(view: UIView, mess: String?) {
         let hud = MBProgressHUD(view: view)
         view.addSubview(hud)
@@ -18,5 +19,18 @@ extension MBProgressHUD {
         hud.labelText = mess;
         hud.show(true)
         hud.hide(true, afterDelay: 2.0)
+    }
+    
+    class func showHUDToView(view: UIView, mess: String?) {
+        let hud = MBProgressHUD(view: view);
+        view.addSubview(hud)
+        hud.yOffset = Float(view.frame.size.height) / 4;
+        hud.mode = MBProgressHUDMode.CustomView
+        hud.labelText = mess;
+        hud.show(true)
+    }
+    
+    class func hideHUDToView(view: UIView) {
+        
     }
 }

@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C3B18991CBB260C006603E6 /* GRNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3B18981CBB260C006603E6 /* GRNetwork.swift */; };
+		4C3B18A61CBB2DBD006603E6 /* ROLogonReturnModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3B18A51CBB2DBD006603E6 /* ROLogonReturnModel.swift */; };
+		4C3B18B61CBB3E82006603E6 /* ACSimpleKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3B18B31CBB3E82006603E6 /* ACSimpleKeychain.m */; };
+		4C3B18B71CBB3E82006603E6 /* ACSimpleKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3B18B31CBB3E82006603E6 /* ACSimpleKeychain.m */; };
+		4C3B18B81CBB3E82006603E6 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 4C3B18B41CBB3E82006603E6 /* LICENSE */; };
+		4C3B18B91CBB3E82006603E6 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 4C3B18B41CBB3E82006603E6 /* LICENSE */; };
+		4C3B18BA1CBB3E82006603E6 /* README.mdown in Sources */ = {isa = PBXBuildFile; fileRef = 4C3B18B51CBB3E82006603E6 /* README.mdown */; };
+		4C3B18BB1CBB3E82006603E6 /* README.mdown in Sources */ = {isa = PBXBuildFile; fileRef = 4C3B18B51CBB3E82006603E6 /* README.mdown */; };
 		4C3B66DC1CB51AE40024CBF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3B66DB1CB51AE40024CBF8 /* AppDelegate.swift */; };
 		4C3B66DE1CB51AE40024CBF8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3B66DD1CB51AE40024CBF8 /* ViewController.swift */; };
 		4C3B66E11CB51AE40024CBF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C3B66DF1CB51AE40024CBF8 /* Main.storyboard */; };
@@ -38,60 +46,17 @@
 			remoteGlobalIDString = 4C3B66D71CB51AE40024CBF8;
 			remoteInfo = LoginVVV;
 		};
-		4CA8464B1CB546210069DC56 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4CA846281CB5444C0069DC56 /* AFNetworking.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 299522391BBF104D00859F49;
-			remoteInfo = "AFNetworking iOS";
-		};
-		4CA8464D1CB546210069DC56 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4CA846281CB5444C0069DC56 /* AFNetworking.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 299522651BBF129200859F49;
-			remoteInfo = "AFNetworking watchOS";
-		};
-		4CA8464F1CB546210069DC56 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4CA846281CB5444C0069DC56 /* AFNetworking.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 299522771BBF136400859F49;
-			remoteInfo = "AFNetworking OS X";
-		};
-		4CA846511CB546210069DC56 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4CA846281CB5444C0069DC56 /* AFNetworking.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 2987B0A51BC408A200179A4C;
-			remoteInfo = "AFNetworking tvOS";
-		};
-		4CA846531CB546210069DC56 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4CA846281CB5444C0069DC56 /* AFNetworking.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 298D7C3B1BC2C79500FD3B3E;
-			remoteInfo = "AFNetworking iOS Tests";
-		};
-		4CA846551CB546210069DC56 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4CA846281CB5444C0069DC56 /* AFNetworking.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 298D7C4A1BC2C7B200FD3B3E;
-			remoteInfo = "AFNetworking Mac OS X Tests";
-		};
-		4CA846571CB546210069DC56 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4CA846281CB5444C0069DC56 /* AFNetworking.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 2987B0AE1BC408A200179A4C;
-			remoteInfo = "AFNetworking tvOS Tests";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		065B92A1C1D85CF48044C38F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		47CD67A2419A308F68F65A01 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		4C3B18981CBB260C006603E6 /* GRNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GRNetwork.swift; sourceTree = "<group>"; };
+		4C3B18A51CBB2DBD006603E6 /* ROLogonReturnModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ROLogonReturnModel.swift; path = UI/ROLogonReturnModel.swift; sourceTree = "<group>"; };
+		4C3B18B21CBB3E82006603E6 /* ACSimpleKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACSimpleKeychain.h; sourceTree = "<group>"; };
+		4C3B18B31CBB3E82006603E6 /* ACSimpleKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACSimpleKeychain.m; sourceTree = "<group>"; };
+		4C3B18B41CBB3E82006603E6 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		4C3B18B51CBB3E82006603E6 /* README.mdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.mdown; sourceTree = "<group>"; };
 		4C3B66D81CB51AE40024CBF8 /* LoginVVV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginVVV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C3B66DB1CB51AE40024CBF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C3B66DD1CB51AE40024CBF8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -113,7 +78,6 @@
 		4C4E73061CB54872002D8926 /* README.mdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.mdown; sourceTree = "<group>"; };
 		4C4E731F1CB54FCA002D8926 /* ROHUD+MBProgressHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ROHUD+MBProgressHUD.swift"; path = "Common/ROHUD+MBProgressHUD.swift"; sourceTree = "<group>"; };
 		4C9C20BA1CB603B4006465A7 /* WebAniViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebAniViewController.swift; sourceTree = "<group>"; };
-		4CA846281CB5444C0069DC56 /* AFNetworking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AFNetworking.xcodeproj; path = "AFNetworking-master/AFNetworking.xcodeproj"; sourceTree = "<group>"; };
 		4CA846411CB544A60069DC56 /* RO-Bri-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RO-Bri-Header.h"; sourceTree = "<group>"; };
 		7F133F46E44D824490D6A60F /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -161,12 +125,31 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4C3B18B01CBB3E82006603E6 /* ACSimpleKeychain */ = {
+			isa = PBXGroup;
+			children = (
+				4C3B18B11CBB3E82006603E6 /* ACSimpleKeychain */,
+				4C3B18B41CBB3E82006603E6 /* LICENSE */,
+				4C3B18B51CBB3E82006603E6 /* README.mdown */,
+			);
+			path = ACSimpleKeychain;
+			sourceTree = "<group>";
+		};
+		4C3B18B11CBB3E82006603E6 /* ACSimpleKeychain */ = {
+			isa = PBXGroup;
+			children = (
+				4C3B18B21CBB3E82006603E6 /* ACSimpleKeychain.h */,
+				4C3B18B31CBB3E82006603E6 /* ACSimpleKeychain.m */,
+			);
+			path = ACSimpleKeychain;
+			sourceTree = "<group>";
+		};
 		4C3B66CF1CB51AE40024CBF8 = {
 			isa = PBXGroup;
 			children = (
-				4CA846281CB5444C0069DC56 /* AFNetworking.xcodeproj */,
 				4C3B66DA1CB51AE40024CBF8 /* LoginVVV */,
 				4C4E73021CB54872002D8926 /* MBProgressHUD */,
+				4C3B18B01CBB3E82006603E6 /* ACSimpleKeychain */,
 				4C3B66EF1CB51AE50024CBF8 /* LoginVVVTests */,
 				4C3B66FA1CB51AE50024CBF8 /* LoginVVVUITests */,
 				4C3B66D91CB51AE40024CBF8 /* Products */,
@@ -233,6 +216,7 @@
 			children = (
 				4C3B670D1CB527D50024CBF8 /* MainPaper */,
 				4C3B670C1CB527C80024CBF8 /* LogRegPaper */,
+				4C3B18A51CBB2DBD006603E6 /* ROLogonReturnModel.swift */,
 			);
 			name = LogReg;
 			sourceTree = "<group>";
@@ -276,6 +260,7 @@
 		4C4E731D1CB54F8B002D8926 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				4C3B18981CBB260C006603E6 /* GRNetwork.swift */,
 			);
 			name = Tool;
 			sourceTree = "<group>";
@@ -286,20 +271,6 @@
 				4C4E731F1CB54FCA002D8926 /* ROHUD+MBProgressHUD.swift */,
 			);
 			name = Category;
-			sourceTree = "<group>";
-		};
-		4CA846421CB546210069DC56 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				4CA8464C1CB546210069DC56 /* AFNetworking.framework */,
-				4CA8464E1CB546210069DC56 /* AFNetworking.framework */,
-				4CA846501CB546210069DC56 /* AFNetworking.framework */,
-				4CA846521CB546210069DC56 /* AFNetworking.framework */,
-				4CA846541CB546210069DC56 /* AFNetworking iOS Tests.xctest */,
-				4CA846561CB546210069DC56 /* AFNetworking Mac OS X Tests.xctest */,
-				4CA846581CB546210069DC56 /* AFNetworking tvOS Tests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -398,12 +369,6 @@
 			mainGroup = 4C3B66CF1CB51AE40024CBF8;
 			productRefGroup = 4C3B66D91CB51AE40024CBF8 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 4CA846421CB546210069DC56 /* Products */;
-					ProjectRef = 4CA846281CB5444C0069DC56 /* AFNetworking.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				4C3B66D71CB51AE40024CBF8 /* LoginVVV */,
@@ -412,58 +377,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		4CA8464C1CB546210069DC56 /* AFNetworking.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = AFNetworking.framework;
-			remoteRef = 4CA8464B1CB546210069DC56 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		4CA8464E1CB546210069DC56 /* AFNetworking.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = AFNetworking.framework;
-			remoteRef = 4CA8464D1CB546210069DC56 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		4CA846501CB546210069DC56 /* AFNetworking.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = AFNetworking.framework;
-			remoteRef = 4CA8464F1CB546210069DC56 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		4CA846521CB546210069DC56 /* AFNetworking.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = AFNetworking.framework;
-			remoteRef = 4CA846511CB546210069DC56 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		4CA846541CB546210069DC56 /* AFNetworking iOS Tests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "AFNetworking iOS Tests.xctest";
-			remoteRef = 4CA846531CB546210069DC56 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		4CA846561CB546210069DC56 /* AFNetworking Mac OS X Tests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "AFNetworking Mac OS X Tests.xctest";
-			remoteRef = 4CA846551CB546210069DC56 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		4CA846581CB546210069DC56 /* AFNetworking tvOS Tests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "AFNetworking tvOS Tests.xctest";
-			remoteRef = 4CA846571CB546210069DC56 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		4C3B66D61CB51AE40024CBF8 /* Resources */ = {
@@ -474,6 +387,7 @@
 				4C3B66E31CB51AE40024CBF8 /* Assets.xcassets in Resources */,
 				4C4E73071CB54872002D8926 /* LICENSE in Resources */,
 				4C3B66E11CB51AE40024CBF8 /* Main.storyboard in Resources */,
+				4C3B18B81CBB3E82006603E6 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,6 +395,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C3B18B91CBB3E82006603E6 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -549,8 +464,12 @@
 				4C3B66DE1CB51AE40024CBF8 /* ViewController.swift in Sources */,
 				4C9C20BB1CB603B4006465A7 /* WebAniViewController.swift in Sources */,
 				4C4E73201CB54FCA002D8926 /* ROHUD+MBProgressHUD.swift in Sources */,
+				4C3B18A61CBB2DBD006603E6 /* ROLogonReturnModel.swift in Sources */,
 				4C3B67111CB528920024CBF8 /* ROLogRegPagerViewController.swift in Sources */,
+				4C3B18B61CBB3E82006603E6 /* ACSimpleKeychain.m in Sources */,
 				4C4E73081CB54872002D8926 /* MBProgressHUD.m in Sources */,
+				4C3B18BA1CBB3E82006603E6 /* README.mdown in Sources */,
+				4C3B18991CBB260C006603E6 /* GRNetwork.swift in Sources */,
 				4C3B670F1CB528710024CBF8 /* ROMainPaperViewController.swift in Sources */,
 				4C3B66DC1CB51AE40024CBF8 /* AppDelegate.swift in Sources */,
 			);
@@ -560,7 +479,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C3B18BB1CBB3E82006603E6 /* README.mdown in Sources */,
 				4C3B66F11CB51AE50024CBF8 /* LoginVVVTests.swift in Sources */,
+				4C3B18B71CBB3E82006603E6 /* ACSimpleKeychain.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
